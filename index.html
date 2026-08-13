@@ -14,28 +14,27 @@
 <body>
 
     <!-- Header / Navigation Bar -->
-<!-- Header / Navigation Bar -->
-<header>
-    <nav class="navbar">
-        <div class="logo">
-            <a href="#">
-                <img src="logo.png" alt="VM Dynamics Logo" style="height: 45px; vertical-align: middle;">
-            </a>
-        </div>
-        <ul class="nav-links" id="navLinks">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#codecraft">GP Codecraft</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="menu-toggle" id="mobileMenu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-    </nav>
-</header>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">
+                    <img src="logo.png" alt="VM Dynamics Logo" style="height: 45px; vertical-align: middle;">
+                </a>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#codecraft">GP Codecraft</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobileMenu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
@@ -98,12 +97,14 @@
     <section id="contact" class="contact section-padding">
         <div class="container">
             <h2 class="section-title">Contact <span>Us</span></h2>
-            <form id="contactForm" class="contact-form">
+            
+            <!-- Formspree Integration -->
+            <form action="https://formspree.io/f/mbgryvpz" method="POST" class="contact-form">
                 <div class="form-group">
                     <input type="text" id="name" name="name" placeholder="Your Name" required>
                 </div>
                 <div class="form-group">
-                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    <input type="email" id="email" name="_replyto" placeholder="Your Email" required>
                 </div>
                 <div class="form-group">
                     <textarea id="message" name="message" rows="5" placeholder="Your Message..." required></textarea>
